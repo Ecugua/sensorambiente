@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estación de Control de Aire</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Estación de Control de Aire</h1>
+
+  <!-- Sección para Sensor 1 -->
+  <div class="sensor-section">
+    <h2>Sensor 1</h2>
+    <canvas id="chartSensor1" width="400" height="200"></canvas>
+    <div class="history-container">
+      <table id="historyTableSensor1">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Temperatura</th>
+            <th>Calidad Aire (Analógica)</th>
+            <th>Calidad Aire (Digital)</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Sección para Sensor 2 -->
+  <div class="sensor-section">
+    <h2>Sensor 2</h2>
+    <canvas id="chartSensor2" width="400" height="200"></canvas>
+    <div class="history-container">
+      <table id="historyTableSensor2">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Temperatura</th>
+            <th>Calidad Aire (Analógica)</th>
+            <th>Calidad Aire (Digital)</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Sección para Sensor 3 -->
+  <div class="sensor-section">
+    <h2>Sensor 3</h2>
+    <canvas id="chartSensor3" width="400" height="200"></canvas>
+    <div class="history-container">
+      <table id="historyTableSensor3">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Temperatura</th>
+            <th>Calidad Aire (Analógica)</th>
+            <th>Calidad Aire (Digital)</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Incluir script.js al final para asegurar que el DOM esté cargado -->
+  <script src="script.js"></script>
+</body>
+</html>
